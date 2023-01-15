@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Flashcards</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+   <div class="container">
+      <div id="header">
+         <h1>Flashcards</h1>
+         <div>
+            <button id="zobrazitBox"><p>Nová karta</p></button>
+            <button id="smazatKarty"><p>Smazat vše</p></button>
+         </div>
+      </div>
+   </div>
+</header>
+
+
+<div class="container">
+   <div id="vytvoritKartu">
+      <h2 style="text-align: center; color: black;">Vytvořit flashcard</h2>
+      <label for="otazka">Otázka</label>
+      <textarea id="otazka"></textarea>
+      <br>
+      <label for="odpoved">Odpověď</label>
+      <textarea id="odpoved"></textarea>
+      <div>
+         <button id="ulozitKartu">Uložit</button>
+         <button id="zavritBox">Zavřít</button>
+      </div>
+   </div>
+   <div id="flashcards"></div>
+</div>
+
+
+
+<footer>
+   <p>2022 Klára Smětáková</p>
+</footer>
+   
+<script src="script.js"></script>
+</body>
+<html>

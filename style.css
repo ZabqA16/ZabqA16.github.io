@@ -1,0 +1,172 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+ 
+body {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1rem;
+   background-color: whitesmoke;
+   margin-bottom: 40px
+}
+
+header {
+   background-color: rgb(30, 73, 82);
+   color: white;
+}
+
+button {
+   padding: 10px;
+   margin-left: 5px;
+   outline: none;
+   cursor: pointer;
+   border: solid 1px rgba(0, 0, 0, 0.071);
+   border-radius: 5px;
+   background-color: rgba(255, 255, 255, 0.1);
+}
+
+#header button:hover {background-color: rgb(255, 255, 255, 0.2);}
+ 
+.container {
+   width: 100%;
+   margin: auto;
+   padding: 0 20px;
+}
+
+#header {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   margin: auto;
+   padding: 10px 0px;
+}
+
+#header button {
+   color: white;
+   font-family: inherit;
+}
+
+#vytvoritKartu {
+   width: 380px;
+   margin:auto;
+   padding: 20px;
+   margin-top: 10px;
+   border-radius: 5px;
+   background-color: white;
+   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.233);
+}
+
+#vytvoritKartu textarea {
+   width: 100%;
+   height: 50px;
+   border-radius: 5px;
+   font-family: inherit;
+   border: 1px solid rgb(0, 0, 0, 0.15)
+}
+
+#vytvoritKartu button {width: fit-content;}
+
+#vytvoritKartu button:hover {background-color: rgba(0, 0, 0, 0.1);}
+
+#flashcards{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   width: 100%;
+   margin: auto;
+   margin-top: 10px;
+   padding: 0 10px;
+}
+
+.flashcard {
+   width: 380px;
+   height: 200px;
+   border-radius: 5px;
+   word-wrap: break-word;
+   margin: 10px;
+   cursor: pointer;
+   position: relative;
+   background-color: white;
+   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.233);
+}
+
+.flashcard h2 {font-size: 1rem;}
+
+.fa-minus{
+   top: 3%;
+   right: 2%;
+   position: absolute;
+   color: #1a1a1a;
+ }
+ 
+ .fa-minus:hover{color: rgb(140, 220, 236);} 
+ 
+
+@media(max-width:768px){
+   .flashcard{
+      margin:auto;
+   }
+
+   .flashcard {
+      margin-top: 10px;
+      margin-bottom: 10px;
+   }
+}
+
+@media(max-width:480px){
+   #header{
+      flex-direction: column;
+      align-items: center;
+   }
+   #header div{
+      margin-top: 10px;
+   }
+   #header button{
+      margin: 0 3px;
+   }
+   .create-box{
+      width: 100%;
+   }
+   .flashcard{
+      width: 100%;
+   }
+ }
+
+
+/* FOOTER */
+footer p {
+   color: rgb(128, 128, 128);
+   font-size: 12px;
+   text-align: center;
+   margin: 0;
+   padding: 5px;
+}
+
+footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:rgb(29, 29, 29);
+   color: white;
+   text-align: center;
+   position: fixed;   
+}
+
+
+p {
+   padding: 0px 0px;
+   font-weight: 400;
+}
+
+h1 {
+   font-size: 30px;
+   font-weight: 500;
+   margin: 0;
+   padding: 0;
+}
+
+h3 {
+   color: rgb(37, 123, 140)
+}
